@@ -1,6 +1,6 @@
 ﻿# **TripsPlanner**
 
-**TripsPlanner** is an application designed to help users plan and manage their future trips efficiently.
+**TripsPlanner** is an application designed to help users plan and manage their future trips.
 
 ## **Features**
 TripsPlanner allows users to:
