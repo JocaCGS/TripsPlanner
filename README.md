@@ -72,7 +72,6 @@ To run this project, you'll need:
     ```bash
     mvn javafx:run
 
-
 ## **Contributing**
 
 1. Fork the repository
