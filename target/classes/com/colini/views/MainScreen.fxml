@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.colini.controllers.MainScreenController">
+   <children>
+      <ImageView fx:id="backgroundImage" fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true"/>
+      <AnchorPane fx:id="mainAnchor" prefHeight="720.0" prefWidth="1280.0">
+         <children>
+            <Label fx:id="usernameLabel" layoutX="1177.0" layoutY="85.0" prefHeight="34.0" prefWidth="103.0" style="-fx-font-family: Roboto;" text="name" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="newTripButton" onAction="#newTrip" layoutX="6.0" layoutY="142.0" mnemonicParsing="false" opacity="0.0" prefHeight="57.0" prefWidth="172.0" />
+            <Button fx:id="changeTripButton" onAction="#updateTrip" layoutX="6.0" layoutY="234.0" mnemonicParsing="false" opacity="0.0" prefHeight="86.0" prefWidth="172.0" />
+            <Button fx:id="removeTripButton" onAction="#deleteTrip" layoutX="6.0" layoutY="348.0" mnemonicParsing="false" opacity="0.0" prefHeight="95.0" prefWidth="172.0" />
+            <TextField fx:id="searchField" layoutX="256.0" layoutY="25.0" opacity="0.38" prefHeight="42.0" prefWidth="254.0" promptText="Search" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-font-family: Roboto;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button fx:id="searchButton" onAction="#seachTrip" layoutX="212.0" layoutY="25.0" mnemonicParsing="false" opacity="0.0" prefHeight="42.0" prefWidth="44.0" />
+            <TableView fx:id="tripsTable" layoutX="216.0" layoutY="94.0" prefHeight="604.0" prefWidth="924.0" style="-fx-background-color: #CED7FF;">
+              <columns>
+                <TableColumn fx:id="tripNameColumn" prefWidth="266.0" style="-fx-background-color: #9EB3FF; -fx-font-family: Roboto;" text="Trip Name" />
+                <TableColumn fx:id="destinationColumn" prefWidth="290.0" style="-fx-background-color: #9EB3FF; -fx-font-family: Roboto;" text="Destination" />
+                  <TableColumn fx:id="priceColumn" prefWidth="208.0" style="-fx-background-color: #9EB3FF; -fx-font-family: Roboto;" text="Price" />
+                  <TableColumn fx:id="dateColumn" prefWidth="159.0" style="-fx-background-color: #9EB3FF; -fx-font-family: Roboto;" text="Date" />
+              </columns>
+            </TableView>
+            <MenuButton fx:id="filterMenu" layoutX="968.0" layoutY="25.0" mnemonicParsing="false" opacity="0.38" prefHeight="42.0" prefWidth="172.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-font-family: Roboto;" text="Filter">
+            </MenuButton>
+            <Button fx:id="filterButton" layoutX="924.0" layoutY="25.0" mnemonicParsing="false" opacity="0.0" prefHeight="42.0" prefWidth="44.0" />
+            <MenuButton fx:id="userMenu" layoutX="1207.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefHeight="63.0" prefWidth="66.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-font-family: Roboto;">
+            </MenuButton>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
