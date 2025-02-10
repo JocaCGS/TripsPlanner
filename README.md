@@ -65,7 +65,6 @@ To run this project, you'll need:
     ```bash
     mvn install
 
-
 4. **Set up the database (See Database Entity Relationship Diagram (ERD)):**
 
 
