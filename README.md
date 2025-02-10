@@ -55,7 +55,7 @@ To run this project, you'll need:
 
 1. **Clone the repository:**
     ```bash
-   git clone https://github.com/yourusername/TripsPlanner.git
+   git clone https://github.com/JocaCGS/TripsPlanner.git
 
 2. **Navigate to the project directory:**
     ```bash
